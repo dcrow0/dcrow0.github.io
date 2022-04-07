@@ -10,7 +10,7 @@ This is my multi-purpose personal website. At present, it's very much a work in 
 
 ### About me
 
-My name is Daniel. I work in quantum computing for [Atom Computing](www.atom-computing.com) where I think about math, physics, and computing. 
+My name is Daniel. I work in quantum computing for [Atom Computing](https://www.atom-computing.com) where I think about math, physics, and computing. 
 
 Outside of work, I enjoy cooking, gardening, and hiking. I have a dog named Otis; he is the best.
 
