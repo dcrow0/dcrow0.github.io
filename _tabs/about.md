@@ -6,7 +6,7 @@ order: 4
 
 ### About this site
 
-This is my multi-purpose personal website. At present, it's very much a work in progress.
+This is my multi-purpose personal website. At present, it's very much a work in progress. I plan to use it as a place to write about non-work related math/physics/computer stuff. I also want to use it as a central place to backup non-work things that I've worked on. In practice, this is likely to be recipes.
 
 ### About me
 
