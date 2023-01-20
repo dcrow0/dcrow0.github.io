@@ -2,7 +2,7 @@
 title: Chili Crisp
 date: 2022-04-20 22:15:00 -0700
 categories: [Recipes]
-tags: [Recipes, Chinese]
+tags: [Recipes]
 toc: false
 comments: false
 math: true
