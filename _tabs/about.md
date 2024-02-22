@@ -1,7 +1,7 @@
 ---
 title: About
-icon: fas fa-info-circle
-order: 4
+# icon: fas fa-info-circle
+order: 1
 ---
 
 ### About this site

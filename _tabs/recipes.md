@@ -1,14 +1,10 @@
 ---
 title: Recipes
-date: 2022-04-20 22:15:00 -0700
-categories: [Recipes]
-tags: [Recipes]
-toc: false
-comments: false
+icon: fa-solid fa-kitchen-set
+order: 2
 math: true
 ---
 
-# Recipes
 
 Here's a running list of recipes mostly for my personal reference.
 
