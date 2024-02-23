@@ -1,7 +1,6 @@
 ---
 title: Recipes
-icon: fa-solid fa-kitchen-set
-order: 2
+order: 3
 math: true
 ---
 
