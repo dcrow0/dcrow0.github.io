@@ -1,5 +1,6 @@
 ---
 layout: page
-icon: 
-# Index page
 ---
+
+{% capture home-content %}{% include content.md %}{% endcapture %}
+{{home-content | markdownify}}
