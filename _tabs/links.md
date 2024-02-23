@@ -10,7 +10,6 @@ This is just a running list of various links that are primarily for my benefit.
 ## Software to investigate
 
 - [Assorted QEC tools](https://github.com/quantumgizmos)
-- [jekyll-google-photos](https://github.com/heychirag/jekyll-google-photos)
 - [pyzx](https://github.com/Quantomatic/pyzx)
 
 
