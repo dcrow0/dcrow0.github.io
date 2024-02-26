@@ -16,7 +16,12 @@ A randomly selected photo of the best dog in the world:
 
 {% include random_image.html %}
 
-<div>
-<img class="fl" width="60%" id="randomImage" src="" alt="The best dog in the world." object-fit="scale-down">
-</div>
+<script>
+  function refresh(){
+        window.location.reload("Refresh")
+      }
+</script>
 
+<div>
+<input type="image" class="fl" width="60%" id="randomImage" src="" alt="The best dog in the world." object-fit="scale-down" onClick="refresh(this)">
+</div>
