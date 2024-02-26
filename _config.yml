@@ -28,7 +28,7 @@ tagline: My multi-purpose personal website
 description: >-                        # used by seo meta and the atom feed
   Daniel Crow's personal website
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://dcrow0.github.io'
+url: 'https://dcrow0.me'
 
 github:
   username: dcrow0 
