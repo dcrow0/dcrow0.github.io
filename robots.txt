@@ -2,4 +2,4 @@ User-agent: *
 
 Disallow: /norobots/
 
-Sitemap: https://dcrow0.github.io/sitemap.xml
+Sitemap: https://dcrow0.me/sitemap.xml
