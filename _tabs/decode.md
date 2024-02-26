@@ -5,7 +5,7 @@ math: true
 ---
 
 
-This is a "game" loosely inspired by the decoding problem from error correction. Note that the graph below is randomly generated and does not correspond to any sort of good code. Refresh to generate a new graph. 
+This is a "game" loosely inspired by the decoding problem from error correction. Note that the graph below is randomly generated and does not correspond to any sort of good code. Click the blue nodes to turn off all of the orange nodes. Refresh to generate a new graph. 
 <div id="game-container"></div>
 
 
