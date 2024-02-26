@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Physics
 order: 1
 math: true
 ---
@@ -11,9 +11,9 @@ I currently work at Atom Computing. I spend most of my time thinking about quant
 
 ## Academic
 
-In grad school I worked on several projects under the umbrella of quantum computation and information. My projects included classical simulation of quantum noise, the geometry of entangled states, and error correction using neutral atoms. 
+In grad school (UW-Madison Physics, Advisor: Robert Joynt) I worked on several projects under the umbrella of quantum computation and information. Research topics included classical simulation of quantum noise, the geometry of entangled states, and error correction using neutral atoms. 
 
-Following grad school I did a postdoc where I worked closer to condensed matter physics. I wrote an exact self-consistent solver for $T_c$ in the BEC/BCS crossover regime, applicable to small "granules" of material. 
+Following grad school I did a postdoc (Shanghai Jiao Tong University, Advisor: Anthony Leggett) where I worked closer to condensed matter physics. I wrote an exact self-consistent solver for $T_c$ in the BEC/BCS crossover regime, applicable to small "granules" of material. 
 
 ## Other
 

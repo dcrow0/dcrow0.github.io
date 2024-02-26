@@ -1,0 +1,19 @@
+
+<script type="text/javascript">
+  function displayRandomImage() {
+    // Get a random index
+    const randomIndex = Math.floor(Math.random() * 64) + 1;
+    const image_path = `/assets/img/otis/${randomIndex}.jpg`;
+    
+    // Get the image element
+    const imgElement = document.getElementById('randomImage');
+    
+    // Set the src attribute of the image element to the randomly selected image URL
+    imgElement.src = image_path;
+
+    const outerElement = imgElement.closest("a");
+    outerElement.href = image_path;
+  }
+
+  window.addEventListener('load', displayRandomImage);
+</script>
