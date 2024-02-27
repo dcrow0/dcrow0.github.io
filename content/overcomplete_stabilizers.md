@@ -24,9 +24,9 @@ Decoding requires clasical logic. Given the 7-bit syndrome, errors on data can b
 
 ## A note on scalability
 
-This work was initially focused on performing early error correction demonstrations using neutral atoms, although we explored further in [future](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.97.012318) [papers](https://link.springer.com/article/10.1007/s11128-021-03015-1). 
+This work was initially focused on performing early error correction demonstrations using neutral atoms, although we explored further in [subsequent](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.97.012318) [papers](https://link.springer.com/article/10.1007/s11128-021-03015-1). 
 
-It is worth emphasizing the difficulties in scaling this approach. Solving the decoding problem on quantum hardware is a daunting task. In the case of the Steane code, implementing a lookup-table decoder using generalized Toffoli gates is a challenge. It's also worth pointing out that despite much progress in Rydberg-based operations, native 5-qubit gates remain—to my knowledge—purely hypothetical. For larger codes, implementing a full decoding algorithm is completely impractical. In principle, the approach could be used with concatenated codes without soft decoding, but again---the prospect is daunting.
+It is worth emphasizing the difficulties in scaling this approach. Solving the decoding problem on quantum hardware is a daunting task. In the case of the Steane code, implementing a lookup-table decoder using generalized Toffoli gates is straightforward, at least theoretically. (Practically, it's worth pointing out that despite much progress in Rydberg-based operations, native 5-qubit gates remain—to my knowledge—purely hypothetical.) For larger codes, implementing a full decoding algorithm is completely impractical. In principle, the approach could be used with concatenated codes and using hard decoding, but again---the prospect is daunting.
 
 On the other hand, there has been some encouraging work using overcomplete sets of parity checks. For later work on overcomplete stabilizers, see [this work](https://iopscience.iop.org/article/10.1088/2058-9565/aafc8f) from Earl Campbell and [this work](https://ieeexplore.ieee.org/document/9576754) from Delfosse, Reichardt, and Svore. 
 

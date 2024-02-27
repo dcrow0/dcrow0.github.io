@@ -21,7 +21,7 @@ Atom loss can only be detected between syndrome extraction cycles (using a knock
 
 ## Simulations
 
-To study the effect of atom loss on QEC, I performed simulations of surface code memory experiments in the presence of atom loss. The stabilizer computations were performed using [Stim](https://github.com/quantumlib/Stim) and decoding was performed using [PyMatching](https://github.com/oscarhiggott/PyMatching). The results below use a standard depolarizing error model on 1Q and 2Q gates, SPAM error, and per-round idle error. All error mechanisms occur with equal probability. For simulations with loss, atom loss occurs per circuit timestep with the same probability. 
+To study the effect of atom loss on QEC, I performed simulations of surface code memory experiments in the presence of atom loss. The stabilizer computations were performed using [Stim](https://github.com/quantumlib/Stim) and decoding was performed using [PyMatching](https://github.com/oscarhiggott/PyMatching). The results below use a standard depolarizing error model on 1Q and 2Q gates, SPAM error, and per-round idle error. All error mechanisms occur with equal probability. For simulations with loss, atom loss occurs per circuit timestep with the same probability. In the plot below notice the minimal effect of atom loss on threshold, and the parallel slopes for corresponding lossy and lossless curves. 
 
 <img src="/assets/img/math/lossy_and_lossless.png" width="800"/>
 
