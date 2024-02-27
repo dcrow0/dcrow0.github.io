@@ -5,7 +5,7 @@ math: true
 ---
 
 
-A running list of recipes mostly for my personal reference.
+A list of recipes for my personal reference.
 
 ## Chili Crisp
 
@@ -20,7 +20,7 @@ A running list of recipes mostly for my personal reference.
 - 1/4 cup dried onion flakes
 - 1 tsp sugar, divided
 - 1 tsp kosher salt, divided
-- 1/3 - 1/2 cup of chili flakes. (I used a mix of Sichuan peppers and Korean gochugaru, in roughly equal proportions. I kept some of the seeds from the Sichuan peppers, but discarded most of them.)
+- 1/3 - 1/2 cup of dried (Sichuan) pepper flakes 
 - 1/8 cup of sesame seeds
 - 1/8 cup fermented black beans
 - 2 tsp of Sichuan peppercorn (red)
@@ -54,7 +54,7 @@ A running list of recipes mostly for my personal reference.
 - 1-2 tomatillos
 - 1/2 white onion, diced
 - 3 garlic cloves, minced
-- juice from several limes
+- lime juice
 - salt
 
 ### Steps
