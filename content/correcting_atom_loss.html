@@ -30,22 +30,22 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="404: Page not found" />
+<meta property="og:title" content="Error correction with atom loss" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Daniel Crow’s personal website" />
 <meta property="og:description" content="Daniel Crow’s personal website" />
-<link rel="canonical" href="https://dcrow0.me/404.html" />
-<meta property="og:url" content="https://dcrow0.me/404.html" />
+<link rel="canonical" href="https://dcrow0.me/content/correcting_atom_loss.html" />
+<meta property="og:url" content="https://dcrow0.me/content/correcting_atom_loss.html" />
 <meta property="og:site_name" content="Daniel Crow" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="404: Page not found" />
+<meta property="twitter:title" content="Error correction with atom loss" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Daniel Crow’s personal website","headline":"404: Page not found","url":"https://dcrow0.me/404.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Daniel Crow’s personal website","headline":"Error correction with atom loss","url":"https://dcrow0.me/content/correcting_atom_loss.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>404: Page not found | Daniel Crow
+  <title>Error correction with atom loss | Daniel Crow
   </title>
 
   <!--
@@ -249,8 +249,10 @@
           
         
           
+        
+          
             
-              <span>404: Page not found</span>
+              <span>Error correction with atom loss</span>
             
 
           
@@ -264,7 +266,7 @@
     </button>
 
     <div id="topbar-title">
-      404: Page not found
+      Error correction with atom loss
     </div>
 
     <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">Cancel</button>
@@ -303,6 +305,79 @@
 
 
 
+  
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
+
 
 <!-- Add header for code snippets -->
 
@@ -317,6 +392,49 @@
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -347,14 +465,27 @@
     
     
     <h1 class="dynamic-title">
-      404: Page not found
+      Error correction with atom loss
     </h1>
     <div class="content">
-      
+      <h2 id="atom-loss-and-2-qubit-gates"><span class="me-2">Atom loss and 2-qubit gates</span><a href="#atom-loss-and-2-qubit-gates" class="anchor text-muted"><i></i></a></h2>
 
+<p>Atoms trapped in optical lattices have finite vacuum lifetimes. Furthermore, depending on atomic species and 2-qubit gate design, atom loss is a significant contributor to 2-qubit gate errors. Thus, atom loss presents a challenge for fault-tolerant quantum computing with neutral atoms.</p>
 
+<p>Although other proposals exist, neutral atoms typically implement 2-qubit gates using the Rydberg interaction. While ground-state neutral atoms typically do not interact strongly, strong interactions can be induced by exciting neighboring atoms to states with large principle quantum number. This interaction can be used to implement a CZ gate by attempting to simultaneously excite both $\vert 1 \rangle $ states to the Rydberg state. The sequence is carefully calibrated so that if one or both atoms begin in the $ \vert 0 \rangle $ state, no excitation to the Rydberg state occurs and no overall phase is acquired.</p>
 
-<p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.</p>
+<p>If no excitation to the Rydberg level occurs for one atom, then there is no effect on its gate partner. If an atom is lost, there is no excitation to the Rydberg level. Thus, the effect on the gate partner of a lost atom is effectively an Identity gate.</p>
+
+<h2 id="syndrome-extraction-with-atom-loss"><span class="me-2">Syndrome extraction with atom loss</span><a href="#syndrome-extraction-with-atom-loss" class="anchor text-muted"><i></i></a></h2>
+
+<p>Atom loss can only be detected between syndrome extraction cycles (using a knock-knock style protocol, or by swapping to data onto a different set of atoms). Syndrome information extracted is unreliable—if obtained at all—when qubits are lost during syndrome extraction. Unlike a typical erasure error, in which the precise temporal location of the error is known, atom loss is checked only between cycles, meaning that an entire cycle’s worth of syndrome information involving lost qubits is unreliable. Fortunately, due to the effective Identity gates on the partners of lost atoms, the effect of atom loss remains localized to a small spacetime region. These detected losses can be used to update decoding graphs.</p>
+
+<h2 id="simulations"><span class="me-2">Simulations</span><a href="#simulations" class="anchor text-muted"><i></i></a></h2>
+
+<p>To study the effect of atom loss on QEC, I performed simulations of surface code memory experiments in the presence of atom loss. The stabilizer computations were performed using <a href="https://github.com/quantumlib/Stim">Stim</a> and decoding was performed using <a href="https://github.com/oscarhiggott/PyMatching">PyMatching</a>. The results below use a standard depolarizing error model on 1Q and 2Q gates, SPAM error, and per-round idle error. All error mechanisms occur with equal probability. For simulations with loss, atom loss occurs per circuit timestep with the same probability.</p>
+
+<p><a href="/assets/img/math/lossy_and_lossless.png" class="popup img-link  shimmer"><img src="/assets/img/math/lossy_and_lossless.png" width="800" loading="lazy"></a></p>
+
 
     </div>
   
@@ -574,6 +705,29 @@
 
 <script defer src="/assets/js/dist/page.min.js"></script>
 
+
+  <!-- MathJax -->
+  <script>
+    /* see: <https://docs.mathjax.org/en/latest/options/input/tex.html#tex-options> */
+    MathJax = {
+      tex: {
+        /* start/end delimiter pairs for in-line math */
+        inlineMath: [
+          ['$', '$'],
+          ['\\(', '\\)']
+        ],
+        /* start/end delimiter pairs for display math */
+        displayMath: [
+          ['$$', '$$'],
+          ['\\[', '\\]']
+        ],
+        /* equation numbering */
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
 
 
 

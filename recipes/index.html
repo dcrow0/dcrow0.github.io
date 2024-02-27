@@ -14,7 +14,7 @@
 
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" >
+<html lang="en" data-mode="dark">
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
@@ -32,17 +32,17 @@
 <meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Recipes" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A running list of recipes mostly for my personal reference." />
-<meta property="og:description" content="A running list of recipes mostly for my personal reference." />
+<meta name="description" content="A list of recipes for my personal reference." />
+<meta property="og:description" content="A list of recipes for my personal reference." />
 <link rel="canonical" href="https://dcrow0.me/recipes/" />
 <meta property="og:url" content="https://dcrow0.me/recipes/" />
 <meta property="og:site_name" content="Daniel Crow" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-02-25T21:25:37-08:00" />
+<meta property="article:published_time" content="2024-02-26T23:28:45-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Recipes" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-25T21:25:37-08:00","datePublished":"2024-02-25T21:25:37-08:00","description":"A running list of recipes mostly for my personal reference.","headline":"Recipes","mainEntityOfPage":{"@type":"WebPage","@id":"https://dcrow0.me/recipes/"},"url":"https://dcrow0.me/recipes/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-26T23:28:45-08:00","datePublished":"2024-02-26T23:28:45-08:00","description":"A list of recipes for my personal reference.","headline":"Recipes","mainEntityOfPage":{"@type":"WebPage","@id":"https://dcrow0.me/recipes/"},"url":"https://dcrow0.me/recipes/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -112,151 +112,6 @@
   
 
   <!-- JavaScript -->
-
-  
-    <!-- Switch the mode between dark and light. -->
-
-<script type="text/javascript">
-  class ModeToggle {
-    static get MODE_KEY() {
-      return 'mode';
-    }
-    static get MODE_ATTR() {
-      return 'data-mode';
-    }
-    static get DARK_MODE() {
-      return 'dark';
-    }
-    static get LIGHT_MODE() {
-      return 'light';
-    }
-    static get ID() {
-      return 'mode-toggle';
-    }
-
-    constructor() {
-      if (this.hasMode) {
-        if (this.isDarkMode) {
-          if (!this.isSysDarkPrefer) {
-            this.setDark();
-          }
-        } else {
-          if (this.isSysDarkPrefer) {
-            this.setLight();
-          }
-        }
-      }
-
-      let self = this;
-
-      /* always follow the system prefers */
-      this.sysDarkPrefers.addEventListener('change', () => {
-        if (self.hasMode) {
-          if (self.isDarkMode) {
-            if (!self.isSysDarkPrefer) {
-              self.setDark();
-            }
-          } else {
-            if (self.isSysDarkPrefer) {
-              self.setLight();
-            }
-          }
-
-          self.clearMode();
-        }
-
-        self.notify();
-      });
-    } /* constructor() */
-
-    get sysDarkPrefers() {
-      return window.matchMedia('(prefers-color-scheme: dark)');
-    }
-
-    get isSysDarkPrefer() {
-      return this.sysDarkPrefers.matches;
-    }
-
-    get isDarkMode() {
-      return this.mode === ModeToggle.DARK_MODE;
-    }
-
-    get isLightMode() {
-      return this.mode === ModeToggle.LIGHT_MODE;
-    }
-
-    get hasMode() {
-      return this.mode != null;
-    }
-
-    get mode() {
-      return sessionStorage.getItem(ModeToggle.MODE_KEY);
-    }
-
-    /* get the current mode on screen */
-    get modeStatus() {
-      if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
-        return ModeToggle.DARK_MODE;
-      } else {
-        return ModeToggle.LIGHT_MODE;
-      }
-    }
-
-    setDark() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-    }
-
-    setLight() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-    }
-
-    clearMode() {
-      document.documentElement.removeAttribute(ModeToggle.MODE_ATTR);
-      sessionStorage.removeItem(ModeToggle.MODE_KEY);
-    }
-
-    /* Notify another plugins that the theme mode has changed */
-    notify() {
-      window.postMessage(
-        {
-          direction: ModeToggle.ID,
-          message: this.modeStatus
-        },
-        '*'
-      );
-    }
-
-    flipMode() {
-      if (this.hasMode) {
-        if (this.isSysDarkPrefer) {
-          if (this.isLightMode) {
-            this.clearMode();
-          } else {
-            this.setLight();
-          }
-        } else {
-          if (this.isDarkMode) {
-            this.clearMode();
-          } else {
-            this.setDark();
-          }
-        }
-      } else {
-        if (this.isSysDarkPrefer) {
-          this.setLight();
-        } else {
-          this.setDark();
-        }
-      }
-
-      this.notify();
-    } /* flipMode() */
-  } /* ModeToggle */
-
-  const modeToggle = new ModeToggle();
-</script>
 
   
 
@@ -346,14 +201,6 @@
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    
-      <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
-        <i class="fas fa-adjust"></i>
-      </button>
-
-      
-        <span class="icon-border"></span>
-      
     
 
     
@@ -590,7 +437,7 @@
       Recipes
     </h1>
     <div class="content">
-      <p>A running list of recipes mostly for my personal reference.</p>
+      <p>A list of recipes for my personal reference.</p>
 
 <h2 id="chili-crisp"><span class="me-2">Chili Crisp</span><a href="#chili-crisp" class="anchor text-muted"><i></i></a></h2>
 
@@ -607,7 +454,7 @@
   <li>1/4 cup dried onion flakes</li>
   <li>1 tsp sugar, divided</li>
   <li>1 tsp kosher salt, divided</li>
-  <li>1/3 - 1/2 cup of chili flakes. (I used a mix of Sichuan peppers and Korean gochugaru, in roughly equal proportions. I kept some of the seeds from the Sichuan peppers, but discarded most of them.)</li>
+  <li>1/3 - 1/2 cup of dried (Sichuan) pepper flakes</li>
   <li>1/8 cup of sesame seeds</li>
   <li>1/8 cup fermented black beans</li>
   <li>2 tsp of Sichuan peppercorn (red)</li>
@@ -644,7 +491,7 @@
   <li>1-2 tomatillos</li>
   <li>1/2 white onion, diced</li>
   <li>3 garlic cloves, minced</li>
-  <li>juice from several limes</li>
+  <li>lime juice</li>
   <li>salt</li>
 </ul>
 

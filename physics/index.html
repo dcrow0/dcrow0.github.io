@@ -14,7 +14,7 @@
 
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" >
+<html lang="en" data-mode="dark">
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
@@ -32,17 +32,17 @@
 <meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Physics" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Work" />
-<meta property="og:description" content="Work" />
+<meta name="description" content="Work I am currently a Senior Error Correction Theorist at Atom computing and the Technical Lead of the QEC team. Despite my title, I like to think of myself and my team members as QEC engineers. I spend most of my time thinking about quantum error correction, fault-tolerance, and architectures of quantum computers based on neutral atoms. I also enjoy thinking about compilation of quantum gates and algorithms, quantum applications, resource estimation, and (abstracted) neutral atom physics. In almost all of my work, I enjoy writing simulations." />
+<meta property="og:description" content="Work I am currently a Senior Error Correction Theorist at Atom computing and the Technical Lead of the QEC team. Despite my title, I like to think of myself and my team members as QEC engineers. I spend most of my time thinking about quantum error correction, fault-tolerance, and architectures of quantum computers based on neutral atoms. I also enjoy thinking about compilation of quantum gates and algorithms, quantum applications, resource estimation, and (abstracted) neutral atom physics. In almost all of my work, I enjoy writing simulations." />
 <link rel="canonical" href="https://dcrow0.me/physics/" />
 <meta property="og:url" content="https://dcrow0.me/physics/" />
 <meta property="og:site_name" content="Daniel Crow" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-02-25T21:25:37-08:00" />
+<meta property="article:published_time" content="2024-02-26T23:28:45-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Physics" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-25T21:25:37-08:00","datePublished":"2024-02-25T21:25:37-08:00","description":"Work","headline":"Physics","mainEntityOfPage":{"@type":"WebPage","@id":"https://dcrow0.me/physics/"},"url":"https://dcrow0.me/physics/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-26T23:28:45-08:00","datePublished":"2024-02-26T23:28:45-08:00","description":"Work I am currently a Senior Error Correction Theorist at Atom computing and the Technical Lead of the QEC team. Despite my title, I like to think of myself and my team members as QEC engineers. I spend most of my time thinking about quantum error correction, fault-tolerance, and architectures of quantum computers based on neutral atoms. I also enjoy thinking about compilation of quantum gates and algorithms, quantum applications, resource estimation, and (abstracted) neutral atom physics. In almost all of my work, I enjoy writing simulations.","headline":"Physics","mainEntityOfPage":{"@type":"WebPage","@id":"https://dcrow0.me/physics/"},"url":"https://dcrow0.me/physics/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -112,151 +112,6 @@
   
 
   <!-- JavaScript -->
-
-  
-    <!-- Switch the mode between dark and light. -->
-
-<script type="text/javascript">
-  class ModeToggle {
-    static get MODE_KEY() {
-      return 'mode';
-    }
-    static get MODE_ATTR() {
-      return 'data-mode';
-    }
-    static get DARK_MODE() {
-      return 'dark';
-    }
-    static get LIGHT_MODE() {
-      return 'light';
-    }
-    static get ID() {
-      return 'mode-toggle';
-    }
-
-    constructor() {
-      if (this.hasMode) {
-        if (this.isDarkMode) {
-          if (!this.isSysDarkPrefer) {
-            this.setDark();
-          }
-        } else {
-          if (this.isSysDarkPrefer) {
-            this.setLight();
-          }
-        }
-      }
-
-      let self = this;
-
-      /* always follow the system prefers */
-      this.sysDarkPrefers.addEventListener('change', () => {
-        if (self.hasMode) {
-          if (self.isDarkMode) {
-            if (!self.isSysDarkPrefer) {
-              self.setDark();
-            }
-          } else {
-            if (self.isSysDarkPrefer) {
-              self.setLight();
-            }
-          }
-
-          self.clearMode();
-        }
-
-        self.notify();
-      });
-    } /* constructor() */
-
-    get sysDarkPrefers() {
-      return window.matchMedia('(prefers-color-scheme: dark)');
-    }
-
-    get isSysDarkPrefer() {
-      return this.sysDarkPrefers.matches;
-    }
-
-    get isDarkMode() {
-      return this.mode === ModeToggle.DARK_MODE;
-    }
-
-    get isLightMode() {
-      return this.mode === ModeToggle.LIGHT_MODE;
-    }
-
-    get hasMode() {
-      return this.mode != null;
-    }
-
-    get mode() {
-      return sessionStorage.getItem(ModeToggle.MODE_KEY);
-    }
-
-    /* get the current mode on screen */
-    get modeStatus() {
-      if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
-        return ModeToggle.DARK_MODE;
-      } else {
-        return ModeToggle.LIGHT_MODE;
-      }
-    }
-
-    setDark() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-    }
-
-    setLight() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-    }
-
-    clearMode() {
-      document.documentElement.removeAttribute(ModeToggle.MODE_ATTR);
-      sessionStorage.removeItem(ModeToggle.MODE_KEY);
-    }
-
-    /* Notify another plugins that the theme mode has changed */
-    notify() {
-      window.postMessage(
-        {
-          direction: ModeToggle.ID,
-          message: this.modeStatus
-        },
-        '*'
-      );
-    }
-
-    flipMode() {
-      if (this.hasMode) {
-        if (this.isSysDarkPrefer) {
-          if (this.isLightMode) {
-            this.clearMode();
-          } else {
-            this.setLight();
-          }
-        } else {
-          if (this.isDarkMode) {
-            this.clearMode();
-          } else {
-            this.setDark();
-          }
-        }
-      } else {
-        if (this.isSysDarkPrefer) {
-          this.setLight();
-        } else {
-          this.setDark();
-        }
-      }
-
-      this.notify();
-    } /* flipMode() */
-  } /* ModeToggle */
-
-  const modeToggle = new ModeToggle();
-</script>
 
   
 
@@ -346,14 +201,6 @@
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    
-      <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
-        <i class="fas fa-adjust"></i>
-      </button>
-
-      
-        <span class="icon-border"></span>
-      
     
 
     
@@ -549,11 +396,15 @@
     <div class="content">
       <h2 id="work"><span class="me-2">Work</span><a href="#work" class="anchor text-muted"><i></i></a></h2>
 
-<p>I currently work at Atom Computing. I spend most of my time thinking about quantum error correction, fault-tolerance, and architectures of quantum computers. I also enjoy thinking about compilation of quantum gates and algorithms, quantum applications, fault-tolerant resource estimation, and neutral atom physics. In almost all of my work, I love writing simulations.</p>
+<p>I am currently a Senior Error Correction Theorist at Atom computing and the Technical Lead of the QEC team. Despite my title, I like to think of myself and my team members as QEC engineers. I spend most of my time thinking about quantum error correction, fault-tolerance, and architectures of quantum computers based on neutral atoms. I also enjoy thinking about compilation of quantum gates and algorithms, quantum applications, resource estimation, and (abstracted) neutral atom physics. In almost all of my work, I enjoy writing simulations.</p>
+
+<p>I started at Atom Computing as a member of the Applications team in 2021. In addition to some work on error correction, I also worked on developing early QCVV software, simulation of NISQ algorithms, and compiling/optimizing for Atom’s native gateset. Early projects on error correction explored <a href="/content/correcting_atom_loss">dealing with atom loss</a> and simulation of logical gates. I was also involved with Atom’s efforts on the DARPA US2QC program.</p>
+
+<p>Currently, I am working on developing Atom Computing’s QEC software stack, including a Clifford simulator that incorporates leakage and loss, our decoding toolset, error budgeting, code developement utilities, and tools to map various QEC codes to our hardware. I also work on evaluation of medium- and long-term architectural candidates and fault-tolerant resource estimation.</p>
 
 <h2 id="academic"><span class="me-2">Academic</span><a href="#academic" class="anchor text-muted"><i></i></a></h2>
 
-<p>In grad school (UW-Madison Physics, Advisor: Robert Joynt) I worked on several projects under the umbrella of quantum computation and information. Research topics included classical simulation of quantum noise, the geometry of entangled states, and error correction using neutral atoms.</p>
+<p>In grad school (UW-Madison Physics, Advisor: Robert Joynt) I worked on several projects under the umbrella of quantum computation and information. Research topics included classical simulation of quantum noise, the <a href="/content/geometry_of_entangled_states">geometry of entangled states</a>, and <a href="/content/overcomplete_stabilizers">error correction using neutral atoms without measurement</a>.</p>
 
 <p>Following grad school I did a postdoc (Shanghai Jiao Tong University, Advisor: Anthony Leggett) where I worked closer to condensed matter physics. I wrote an exact self-consistent solver for $T_c$ in the BEC/BCS crossover regime, applicable to small “granules” of material.</p>
 
