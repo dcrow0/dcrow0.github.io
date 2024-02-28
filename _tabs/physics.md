@@ -8,7 +8,7 @@ math: true
  
 I am currently a Senior Error Correction Theorist at Atom computing and the Technical Lead of the QEC team. Despite my title, I like to think of myself and my team members as QEC engineers; it's our job to focus on practical aspects of implementing quantum error correction. We work closely with quantum engineers and FPGA enginners. 
 
-I spend most of my time thinking about quantum error correction, fault-tolerance, and architectures of quantum computers based on neutral atoms. I also enjoy thinking about compilation of quantum gates and algorithms, quantum applications, resource estimation, and (abstracted) neutral atom physics. In almost all of my work, I enjoy writing simulations. 
+I spend most of my time thinking about quantum error correction, fault-tolerance, and architectures of quantum computers based on neutral atoms. I also enjoy thinking about compilation of quantum gates and algorithms, quantum applications, resource estimation, and (abstracted) neutral atom physics. In all of my work, I enjoy switching back and forth between pencil-and-paper math and writing simulations.
 
 I started at Atom Computing as a member of the Applications team in 2021. In addition to some work on error correction, I also worked on developing early QCVV software, simulation of NISQ algorithms, and compiling/optimizing for Atom's native gateset. Early projects on error correction explored [dealing with atom loss](/content/correcting_atom_loss) and simulation of logical gates. I was also involved with Atom's efforts on the DARPA US2QC program.
 
