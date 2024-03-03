@@ -45,7 +45,13 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification:               # fill in to your verification string
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+noindex: false
+
+# google_site_verification:               # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
