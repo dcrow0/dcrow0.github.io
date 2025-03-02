@@ -21,9 +21,6 @@ In grad school (UW-Madison Physics, Advisor: Robert Joynt) I worked on several p
 
 Following grad school I did a postdoc (Shanghai Jiao Tong University, Advisor: Anthony Leggett) where I worked closer to condensed matter physics. I wrote an exact self-consistent solver for $T_c$ in the BEC/BCS crossover regime, applicable to small "granules" of material. Ensembles of many such granules of varying size demonstrate higher $T_c$ than macroscopic samples of the same material. 
 
-## Other
-
-For a few years between academia and industry, I taught physics at Phillips Academy in Andover, MA. The school has some remarkable students, and I particularly enjoyed teaching a quantum mechanics course that I developed. We followed *A Modern Approach to Quantum Mechanics* by Townsend. I am a firm advocate of using two-state systems and linear algebra as primary entry points into quantum mechanics. The course is appropriate for students that have completed single-variable calculus and a rigorous calculus-based physics course, but experience with multivariable calc, linear algebra, and prior experience with advanced physics courses are recommended. My course notes and problem sets are available on request. 
 
 
 
