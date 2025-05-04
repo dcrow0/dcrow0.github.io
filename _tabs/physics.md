@@ -6,7 +6,7 @@ math: true
 
 ## Work
  
-I am currently Quantum Error Correction Manager at Atom computing. 
+I am currently Quantum Error Correction Manager at Atom Computing. 
 
 I spend much of my time thinking about quantum error correction, fault-tolerance, and architecture of quantum computers based on neutral atoms. I also enjoy thinking about compilation of quantum gates, circuits, and algorithms, resource estimation, simulation, and neutral atom physics. In all of my work, I enjoy switching back and forth between pencil-and-paper math and writing software.
 
